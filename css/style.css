@@ -1,0 +1,23 @@
+header {
+}
+
+button {
+	float: right;
+}
+
+div {
+	clear: both;
+	float: right;
+}
+
+footer {
+	clear: both;
+}
+
+ul {
+	display: inline-block;
+}
+
+li {
+	display: inline;
+}
