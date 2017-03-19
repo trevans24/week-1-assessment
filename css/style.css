@@ -193,12 +193,13 @@ a {
 
 	.description img {
 		zoom: 70%;
+		font-size: 40px;
 	}
 
 	h2 {
 		margin: 0;
 		color: #F5F5F7;
-		zoom: 100%;
+		font-size: 50px;
 	}
 
 	a {
