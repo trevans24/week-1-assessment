@@ -1,8 +1,8 @@
 /* body */
-
 body {
 	background: url(../images/bgtile.png);
 	background-repeat: repeat-x;
+	background-color: #F5F5F7;
 	padding-top: 75px;
 	max-width: 850px;
 	padding-left: 175px;
@@ -15,6 +15,17 @@ button {
 	width: 80px;
 	margin-right: 50px;
 	margin-top: 20px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 0 0 1px;
+}
+
+button:hover {
+	box-shadow: 0 0 0 1px, 0 5px 5px;
+}
+
+button:active {
+	box-shadow: 0 0 0 1px, 0 5px 5px;
 }
 
 button img {
@@ -50,11 +61,11 @@ button p {
 	max-width: 390px;
 	padding: 15px 20px;
 	border: 5px;
-	background-color: white;
+	background-color: #F5F5F7;
 }
 
 h2 {
-	color: #6685A4;
+	color: #597797;
 	margin-left: 5px;
 }
 
@@ -75,18 +86,20 @@ li {
 }
 
 a {
-	color: #6685A4;
+	color: #7C95AF;
 }
 
 /* media */
 
 /*tablets*/
 @media only screen 
-  and (min-device-width: 740px) 
+  and (min-device-width: 768px) 
   and (max-device-width: 1020px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
   	body {
-  		display: inline-block;
+  		background: url(../images/instagram-gradient-wallpaper.png);
+  		background-size: cover;
+  		min-height: 100%;
 		padding-top: 25px;
 		padding: 0 45px;
 		zoom: 125%;
@@ -95,7 +108,7 @@ a {
 	.body {
 		height: 600px;
 		width: 700px;
-		margin-top: 50px;
+		margin-top: 150px;
 	}
 
 	button {
@@ -109,29 +122,46 @@ a {
 	}
 
 	.phones {
-		margin: 0 5px 10px 0;
-		zoom: 100%;
-		vertical-align: bottom;
+		display: last;
+		zoom: 85%;
 	}
 
 	.description {
 		zoom: 125%;
+		width: 300px;
 		margin: 0;
+		color: #F5F5F7;
+		background-color: transparent;
+	}
+
+	.description img {
+		zoom: 75%;
 	}
 
 	h2 {
+		color: #F5F5F7;
 		margin: 0;
+	}
+
+	a {
+		color: white;
+	}
+
+	footer {
+		color: white;
+		zoom: 130%;
 	}
 }
 
 /*phones*/
 
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen  
   and (max-device-width: 765px)
   and (-webkit-min-device-pixel-ratio: 2) {
 	body {
-		background-size: 5px;
+		background: url(../images/instagram-gradient-wallpaper.png);
+		background-size: cover;
+		min-height: 100%;
 		display: block;
 		padding-top: 25px;
 		max-width: 450px;
@@ -140,9 +170,14 @@ a {
 	}
 
 	button {
-		margin-right: 60px;
+		margin-right: 70px;
 		margin-top: 20px;
-		zoom: 200%;
+		zoom: 150%;
+	}
+
+	.logo {
+		border-left: 10px;
+		padding: 0 30px 0 0;
 	}
 
 	.phones {
@@ -152,9 +187,26 @@ a {
 	.description {
 		zoom: 200%;
 		margin: 0;
+		color: #F5F5F7;
+		background-color: transparent;
+	}
+
+	.description img {
+		zoom: 70%;
 	}
 
 	h2 {
 		margin: 0;
+		color: #F5F5F7;
+		zoom: 100%;
+	}
+
+	a {
+		color: white;
+	}
+
+	footer {
+		color: white;
+		zoom: 100%;
 	}
 }
