@@ -1,28 +1,69 @@
-/*heading styling*/
+/* body */
 
-header {
+body {
+	background: url(../images/bgtile.png);
+	background-repeat: repeat-x;
+	padding-top: 75px;
+	max-width: 850px;
+	padding-left: 175px;
 }
 
 button {
 	float: right;
 	background-color: #6685A4;
+	height: 40px;
+	width: 80px;
+	margin-right: 50px;
+	margin-top: 20px;
+}
+
+button img {
+	float: left;
+	padding-top: 5px;
+}
+
+button p {
+	float: right;
+	text-align: center;
 	color: white;
+	padding-right: 3px;
+}
+
+/* images */
+.logo {
+	float: right;
+	padding-right: 50px;
+}
+
+.phones {
+	float: left;
 }
 
 /*text box */
-div {
-	clear: both;
+.body {
+	display: inline-block;
+}
+
+.description {
 	float: right;
+	margin: 40px;
+	max-width: 390px;
+	padding: 15px 20px;
+	border: 5px;
+	background-color: white;
 }
 
 h2 {
 	color: #6685A4;
+	margin-left: 5px;
 }
 
 /*bottom list/copyright*/
 
 footer {
 	clear: both;
+	text-align: center;
+
 }
 
 ul {
@@ -35,4 +76,85 @@ li {
 
 a {
 	color: #6685A4;
+}
+
+/* media */
+
+/*tablets*/
+@media only screen 
+  and (min-device-width: 740px) 
+  and (max-device-width: 1020px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  	body {
+  		display: inline-block;
+		padding-top: 25px;
+		padding: 0 45px;
+		zoom: 125%;
+	}
+
+	.body {
+		height: 600px;
+		width: 700px;
+		margin-top: 50px;
+	}
+
+	button {
+		margin-right: 75px;
+		margin-top: 20px;
+		zoom: 150%;
+	}
+
+	.logo {
+		margin: 35px 15px 35px 0;
+	}
+
+	.phones {
+		margin: 0 5px 10px 0;
+		zoom: 100%;
+		vertical-align: bottom;
+	}
+
+	.description {
+		zoom: 125%;
+		margin: 0;
+	}
+
+	h2 {
+		margin: 0;
+	}
+}
+
+/*phones*/
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 765px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	body {
+		background-size: 5px;
+		display: block;
+		padding-top: 25px;
+		max-width: 450px;
+		padding: 0 45px;
+		zoom: 200%;
+	}
+
+	button {
+		margin-right: 60px;
+		margin-top: 20px;
+		zoom: 200%;
+	}
+
+	.phones {
+		margin-left: 35px;
+	}
+
+	.description {
+		zoom: 200%;
+		margin: 0;
+	}
+
+	h2 {
+		margin: 0;
+	}
 }
