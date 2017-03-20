@@ -8,6 +8,8 @@ body {
 	padding-left: 175px;
 }
 
+/*button*/
+
 button {
 	float: right;
 	background-color: #6685A4;
@@ -39,7 +41,11 @@ button p {
 	padding-right: 3px;
 }
 
-/* images */
+/* images & text*/
+.body {
+	display: inline-block;
+}
+
 .logo {
 	float: right;
 	padding-right: 50px;
@@ -47,11 +53,6 @@ button p {
 
 .phones {
 	float: left;
-}
-
-/*text box */
-.body {
-	display: inline-block;
 }
 
 .description {
@@ -68,7 +69,7 @@ h2 {
 	margin-left: 5px;
 }
 
-/*bottom list/copyright*/
+/*bottom list & copyright*/
 
 footer {
 	clear: both;
